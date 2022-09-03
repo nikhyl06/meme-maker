@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@200;400;600');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins";
+}
+.main{
+    padding: 50px;
+    width: 100vw;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"]{
+    width: 45%;
+    font-size: 20px;
+    padding: 10px;
+    text-indent: 10px;
+}
+
+input[type="text"]:focus,
+.btn:focus{
+    outline: none;
+
+}
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 50px;
+    border: none;
+    background: linear-gradient(to right, rgb(90, 0, 139), rgb(109, 0, 139));
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: transform 0.1s;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.image{
+    width: 80%;
+    display: block;
+    margin: 40px auto 0 auto ;
+    border-radius: 5px;
+}
+
+.meme {
+    position: relative;
+}
+
+.meme--image {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
